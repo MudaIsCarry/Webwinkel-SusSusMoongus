@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*https://colorhunt.co/palette/ff8b13ecececf273e6cf4dce*/
+
+html, body {
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100vw;
+    background-color: #ECECEC;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #F273E6;
+    border: 1px solid #CF4DCE;
+    padding: 1.5rem; /*rem is een ruimte gebaseerd op fontsize.*/
+    border-radius: 5px;
+    gap: 1.5rem;
+    min-width: 35%;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+form div label {
+    font-size: 0,8rem;
+    color: #FF8B13;
+}
+
+form div input {
+    width: 100%;
+    padding: 0.3rem 0.2rem;
+}
+
+form button {
+    padding: 0.3rem 0.2rem;
+    color:#CF4DCE;
+    border: 1px solid #F273E6;
+    border-radius: 5px;
+    cursor: pointer;
+}
