@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 // Database credentials
 $dbHost = '127.0.0.1'; 
-$dbName = 'wittekip41b';
+$dbName = 'nostalgaming';
 $dbUser = 'root';
 $dbPass = 'root';
 
