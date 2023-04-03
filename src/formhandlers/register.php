@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 // Database credentials
 $dbHost = '127.0.0.1'; 
-$dbName = 'nostalgaming';
+$dbName = 'wittekip41b';
 $dbUser = 'root';
 $dbPass = 'root';
 
@@ -20,5 +20,29 @@ try {
 } catch(PDOException $error) {
     header('location: ../../register.php');
     exit(); // die()
-}   
-echo 'Gelukt';
+}
+
+// Connectie is geslaagd, dus nu kunnen we de gegevens vastleggen in de database
+$firstname = htmlentities( $_POST['firstname'] );
+$lastname = htmlentities( $_POST['lastname'] );
+$prefix = htmlentities( $_POST['prefix'] );
+$email = htmlentities( $_POST['email'] );
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$sql = "INSERT INTO `users`(`firstname`, `lastname`, `prefix`, `email`, `password`)
+        VALUES(:firstname, :lastname, :prefix, :email, :password)";
+$placeholders = [
+    ':firstname' => $firstname,
+    ':lastname' => $lastname,
+    ':prefix' => $prefix,
+    ':email' => $email,
+    ':password' => $password
+];
+
+$db_statement = $db_connection->prepare($sql);
+$db_statement->execute($placeholders);
+
+// Na het succesvol vastleggen in de database laten we de gebruiker
+// terugkeren naar het login scherm
+header('location: ../../login.php');
+exit();

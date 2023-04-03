@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registreren | Nostalgaming</title>
+<?php
+session_start();
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <main>
+$page_title = 'Registreren';
+
+@require_once('src/helpers/nav-helpers.php');
+@require_once('src/templates/bovenstukhtml.php');
+?>
+
         <form action="src/formhandlers/register.php" method="POST">
             <h1>Registeren</h1>
             <div>
@@ -25,7 +22,7 @@
                 <input type="text" id="tussenvoegsels" name="prefix" />
             </div>
             <div>
-                <label for="email">E-mail</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" />
             </div>
             <div>
@@ -34,6 +31,6 @@
             </div>
             <button type="submit">Registreren</button>
         </form>
-    </main>
-</body>
-</html>
+
+<?php
+@require_once('src/templates/onderstukhtml.php');
