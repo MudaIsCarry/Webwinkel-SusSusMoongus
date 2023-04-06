@@ -29,7 +29,8 @@ $page_title = 'Registreren';
                 <label for="wachtwoord">Wachtwoord</label>
                 <input type="password" id="wachtwoord" name="password" />
             </div>
-            <button type="submit">Registreren</button>
+            <button type="submit">Registreer
+            </button>
         </form>
 
 <?php

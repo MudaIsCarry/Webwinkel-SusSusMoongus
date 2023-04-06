@@ -226,3 +226,84 @@ form button {
     .div3 { grid-area: 2 / 3 / 4 / 4; 
             background-color: #EB455F;
             color: #EB455F;}
+
+.blik {
+    display: grid;
+    grid-template-columns: 50px repeat(4, 250px) 50px;
+    grid-template-rows: 280px repeat(9, 250px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+                
+    .blk1 { 
+        grid-area: 1 / 2 / 2 / 6; 
+        background-color: #EB455F;
+    }
+    .blk2 { 
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: #EB455F;
+    }
+    .blk3 { 
+        grid-area: 2 / 3 / 3 / 4;
+        background-color: #EB455F;
+    }
+    .blk4 { 
+        grid-area: 2 / 4 / 3 / 5; 
+        background-color: #EB455F;
+    }
+    .blk5 { 
+        grid-area: 2 / 5 / 3 / 6; 
+        background-color: #EB455F;
+    }
+    .blk6 { 
+        grid-area: 3 / 2 / 4 / 6; 
+        background-color: #EB455F;
+    }
+    .blk7 { 
+        grid-area: 4 / 2 / 5 / 4; 
+        background-color: #EB455F;
+    }
+    .blk8 { 
+        grid-area: 4 / 4 / 5 / 6; 
+        background-color: #EB455F;
+    }
+    .blk9 { 
+        grid-area: 5 / 2 / 6 / 6; 
+        background-color: #EB455F;
+    }
+    .blk10 { 
+        grid-area: 6 / 2 / 7 / 3; 
+        background-color: #EB455F;
+    }
+    .blk11 { 
+        grid-area: 6 / 3 / 7 / 4; 
+        background-color: #EB455F;
+    }
+    .blk12 { 
+        grid-area: 6 / 4 / 7 / 5; 
+        background-color: #EB455F;
+    }
+    .blk13 { 
+        grid-area: 6 / 5 / 7 / 6; 
+        background-color: #EB455F;
+    }
+    .blk14 { 
+        grid-area: 7 / 2 / 8 / 6; 
+        background-color: #EB455F;
+    }
+    .blk15 { 
+        grid-area: 8 / 2 / 9 / 6; 
+        background-color: #EB455F;
+    }
+    .blk16 { 
+        grid-area: 9 / 2 / 10 / 4; 
+        background-color: #EB455F;
+    }
+    .blk17 { 
+        grid-area: 9 / 4 / 10 / 6; 
+        background-color: #EB455F;
+    }
+    .blk18 { 
+        grid-area: 10 / 2 / 11 / 6;
+        background-color: #EB455F; 
+    }
